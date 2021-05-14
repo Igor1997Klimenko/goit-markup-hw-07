@@ -406,6 +406,7 @@ img {
   margin-bottom: 4px;
 }
 .checkbox-icon {
+  cursor: pointer;
   margin-right: 7px;
   content: "";
   display: inline-block;
