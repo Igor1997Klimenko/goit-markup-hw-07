@@ -6,10 +6,12 @@
 .spisok__item {
   display: block;
   margin-right: 50px;
+
+  &:last-child {
+    margin-right: 0;
+  }
 }
-.spisok__item:last-child {
-  margin-right: 0;
-}
+
 .spisok__mobile {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   display: flex;
@@ -21,12 +23,14 @@
   align-items: center;
   letter-spacing: 0.02em;
   color: var(--title-cl);
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: var(--main-blu-tx);
+  }
 }
-.spisok__mobile:hover,
-.spisok__mobile:active,
-.spisok__mobile:focus {
-  color: var(--main-blu-tx);
-}
+
 .spisok__icons {
   margin-right: 10px;
   fill: currentColor;

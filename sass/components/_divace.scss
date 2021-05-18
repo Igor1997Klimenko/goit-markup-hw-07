@@ -30,12 +30,14 @@
   width: 44px;
   height: 44px;
   border-radius: 50%;
+
+  &:hover,
+  &:focus {
+    background-color: var(--main-blu-tx);
+    color: var(--alt-title-cl);
+  }
 }
-.divace__social-link:hover,
-.divace__social-link:focus {
-  background-color: var(--main-blu-tx);
-  color: var(--alt-title-cl);
-}
+
 .divace__link--features {
   color: var(--alt-title-cl);
   border-radius: 50%;

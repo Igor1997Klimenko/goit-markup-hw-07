@@ -11,11 +11,13 @@
   line-height: 1.1;
   letter-spacing: 0.02em;
   color: var(--blc-clr-txt);
+
+  &:hover,
+  &:focus {
+    color: var(--main-blu-tx);
+  }
 }
-.navigation__nav:hover,
-.navigation__nav:focus {
-  color: var(--main-blu-tx);
-}
+
 .list {
   color: var(--main-blu-tx);
 }

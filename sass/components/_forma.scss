@@ -26,12 +26,14 @@
   border-radius: 4px;
   text-align: inherit;
   padding-left: 29px;
+
+  &:hover,
+  &:focus {
+    background-color: var(--blue-prim-col);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
 }
-.forma__button:hover,
-.forma__button:focus {
-  background-color: var(--blue-prim-col);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-}
+
 .forma__icon {
   width: 24px;
   height: 24px;

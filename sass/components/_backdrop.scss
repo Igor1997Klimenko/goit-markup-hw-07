@@ -38,12 +38,14 @@
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: var(--alt-title-cl);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: var(--main-blu-tx);
+    border-color: var(--main-blu-tx);
+  }
 }
-.modal__close-btn:hover,
-.modal__close-btn:focus {
-  color: var(--main-blu-tx);
-  border-color: var(--main-blu-tx);
-}
+
 .modal__icons {
   fill: currentColor;
   display: block;
@@ -85,12 +87,7 @@
   width: 15px;
   height: 12px;
 }
-.modal__group--input:hover ~ .modal__inspection--form,
-.modal__group--input:focus ~ .modal__inspection--form,
-.modal__group--input:not(:placeholder-shown) + .modal__inspection--form {
-  transform: translateY(-24px);
-  left: 0;
-}
+
 .modal__next--form {
   margin: 0;
   margin-bottom: 20px;
@@ -102,10 +99,7 @@
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
-.modal__group--input:hover ~ .modal__icon,
-.modal__group--input:focus ~ .modal__icon {
-  fill: var(--main-blu-tx);
-}
+
 .modal__icon:checked {
   margin-left: 20px;
 }
@@ -114,7 +108,15 @@
   line-height: 1.16;
   letter-spacing: 0.01em;
   color: var(--title-cl);
+
+  .modal__group--input:hover ~ &,
+  .modal__group--input:focus ~ &,
+  .modal__group--input:not(:placeholder-shown) + & {
+    transform: translateY(-24px);
+    left: 0;
+  }
 }
+
 .text-time {
   display: block;
   margin-bottom: 4px;
@@ -128,11 +130,13 @@
   height: 15px;
   border: 2px solid var(--blc-clr-txt);
   border-radius: 4px;
+
+  &:hover,
+  &:focus {
+    border-color: var(--main-blu-tx);
+  }
 }
-.checkbox-icon:hover,
-.checkbox-icon:focus {
-  border-color: var(--main-blu-tx);
-}
+
 .checkbox:checked + .checkbox-icon {
   border-color: var(--main-blu-tx);
   background-color: var(--main-blu-tx);
@@ -152,11 +156,18 @@
   box-sizing: border-box;
   border-radius: 4px;
   padding-left: 42px;
+
+  &:hover ~ .modal__icon,
+  &:focus ~ .modal__icon {
+    fill: var(--main-blu-tx);
+  }
+
+  &:hover,
+  &:focus {
+    border: 1px solid var(--main-blu-tx);
+  }
 }
-.modal__group--input:hover,
-.modal__group--input:focus {
-  border: 1px solid var(--main-blu-tx);
-}
+
 .modal__area {
   padding: 12px 16px;
   height: 120px;
@@ -210,9 +221,10 @@
   letter-spacing: 0.06em;
   cursor: pointer;
   font-family: inherit;
-}
-.next-modal__button:hover {
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  background-color: var(--blue-prim-col);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  &:hover {
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    background-color: var(--blue-prim-col);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
 }

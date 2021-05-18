@@ -10,10 +10,11 @@
   margin-bottom: 50px;
   display: flex;
   justify-content: center;
-}
-.cursset__menu .cursset__listen {
-  margin-right: 8px;
-}
-.cursset__menu .cursset__listen:last-child {
-  margin-right: 0px;
+
+  & .cursset__listen {
+    margin-right: 8px;
+  }
+  & .cursset__listen:last-child {
+    margin-right: 0px;
+  }
 }
