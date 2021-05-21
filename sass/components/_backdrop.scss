@@ -131,8 +131,7 @@
   border: 2px solid var(--blc-clr-txt);
   border-radius: 4px;
 
-  &:hover,
-  &:focus {
+  &:hover {
     border-color: var(--main-blu-tx);
   }
 }
@@ -145,6 +144,11 @@
   background-repeat: no-repeat;
   background-origin: border-box;
 }
+
+.checkbox:focus + .checkbox-icon {
+  border-color: var(--main-blu-tx);
+}
+
 .modal__group--input {
   display: block;
   outline: none;

@@ -709,7 +709,7 @@ img {
   border-radius: 4px;
 }
 
-.checkbox-icon:hover, .checkbox-icon:focus {
+.checkbox-icon:hover {
   border-color: var(--main-blu-tx);
 }
 
@@ -720,6 +720,10 @@ img {
   background-size: contain;
   background-repeat: no-repeat;
   background-origin: border-box;
+}
+
+.checkbox:focus + .checkbox-icon {
+  border-color: var(--main-blu-tx);
 }
 
 .modal__group--input {
